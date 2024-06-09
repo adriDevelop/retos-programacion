@@ -1,11 +1,13 @@
 "use strict";
-const fizz_buzz = () => {
-    for (let x = 1; x <= 100; x++) {
-        (x % 3 == 0 && x % 5 == 0) ? console.log('fizzbuzz') :
-            (x % 3 == 0) ? console.log('fizz') :
-                (x % 5 == 0) ? console.log('buzz') :
-                    console.log(x);
+const anagrama = (palabra1, palabra2) => {
+    const arr1 = palabra1.toLowerCase().split('');
+    const arr2 = palabra2.toLowerCase().split('');
+    if (arr1.sort().toString() === arr2.sort().toString()) {
+        return true;
+    }
+    else {
+        return false;
     }
 };
-fizz_buzz();
+console.log(anagrama('Adrian', 'Andrea'));
 //# sourceMappingURL=main.js.map
