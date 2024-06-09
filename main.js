@@ -1,13 +1,10 @@
 "use strict";
-const anagrama = (palabra1, palabra2) => {
-    const arr1 = palabra1.toLowerCase().split('');
-    const arr2 = palabra2.toLowerCase().split('');
-    if (arr1.sort().toString() === arr2.sort().toString()) {
-        return true;
-    }
-    else {
-        return false;
+const muestraSucesion = () => {
+    let arr = [];
+    for (let n = 0; n < 50; n++) {
+        n <= 1 ? arr.push(n) : arr.push(arr[n - 2] + arr[n - 1]);
+        console.log(arr[n] + ' ' + arr.length);
     }
 };
-console.log(anagrama('Adrian', 'Andrea'));
+console.log(muestraSucesion());
 //# sourceMappingURL=main.js.map
