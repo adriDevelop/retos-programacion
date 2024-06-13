@@ -1,18 +1,7 @@
 "use strict";
-const esNumeroPrimo = (num) => {
-    if (num < 2) {
-        return true;
-    }
-    for (let x = 2; x < num; x++) {
-        if (num % x == 0) {
-            return false;
-        }
-    }
-    return true;
-};
-for (let x = 1; x < 100; x++) {
-    if (esNumeroPrimo(x)) {
-        console.log(x);
-    }
-}
+const img = new Image();
+img.src = './06-aspect-ratio/Google.jpg';
+const altura = img.height;
+const anchura = img.width;
+console.log('El aspect ratio de la imagen es: ' + anchura + ':' + altura);
 //# sourceMappingURL=main.js.map
