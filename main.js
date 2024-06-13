@@ -1,10 +1,18 @@
 "use strict";
-const muestraSucesion = () => {
-    let arr = [];
-    for (let n = 0; n < 50; n++) {
-        n <= 1 ? arr.push(n) : arr.push(arr[n - 2] + arr[n - 1]);
-        console.log(arr[n] + ' ' + arr.length);
+const esNumeroPrimo = (num) => {
+    if (num < 2) {
+        return true;
     }
+    for (let x = 2; x < num; x++) {
+        if (num % x == 0) {
+            return false;
+        }
+    }
+    return true;
 };
-console.log(muestraSucesion());
+for (let x = 1; x < 100; x++) {
+    if (esNumeroPrimo(x)) {
+        console.log(x);
+    }
+}
 //# sourceMappingURL=main.js.map

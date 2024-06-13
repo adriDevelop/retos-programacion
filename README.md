@@ -27,3 +27,16 @@
  *   la que el siguiente siempre es la suma de los dos anteriores.
  *   0, 1, 1, 2, 3, 5, 8, 13...
  */
+ # 4.- ¿Es un número primo?
+ /*
+ * Escribe un programa que se encargue de comprobar si un número es o no primo.
+ * Hecho esto, imprime los números primos entre 1 y 100.
+ */
+ # 5 Área de un polígono.
+ /*
+ * Crea una única función (importante que sólo sea una) que sea capaz
+ * de calcular y retornar el área de un polígono.
+ * - La función recibirá por parámetro sólo UN polígono a la vez.
+ * - Los polígonos soportados serán Triángulo, Cuadrado y Rectángulo.
+ * - Imprime el cálculo del área de un polígono de cada tipo.
+ */
