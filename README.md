@@ -64,3 +64,8 @@
  * - No se pueden utilizar funciones propias del lenguaje que
  *   lo resuelvan automáticamente.
  */
+ # 9 .- Decimal a Binario
+ /*
+ * Crea un programa se encargue de transformar un número
+ * decimal a binario sin utilizar funciones propias del lenguaje que lo hagan directamente.
+ */
